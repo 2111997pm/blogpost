@@ -13,8 +13,25 @@ This project provides a simple API for managing blogs, including creating, readi
 Before you begin, ensure you have the following installed:
 
 - [Node.js](https://nodejs.org/)
-- [MongoDB](https://www.mongodb.com/try/download/community) (if you're using MongoDB as a database)
 - Any additional dependencies required for the project (listed below).
+- For connect database with mongodb
+
+1. Sign Up for MongoDB Atlas
+   Go to MongoDB Atlas and create an account.
+2. Create a Cluster
+   After logging in, click on Build a Cluster.
+   Select your preferred cloud provider (AWS, GCP, or Azure) and region.
+   Click Create Cluster (this may take a few minutes).
+3. Configure Network Access
+   Go to Security > Network Access.
+   Click Add IP Address and allow access from anywhere (or provide a specific IP range).
+   Click Confirm.
+4. Create a Database User
+   Go to Security > Database Access.
+   Click Add New Database User, create a username and password, and assign permissions like Read and write to any database.
+   Click Add User.
+
+5. Replace the Url in app.js page add string new string URl.
 
 ## Installation
 
@@ -25,4 +42,5 @@ Before you begin, ensure you have the following installed:
    npm i - for node module
    npm run dev - for start the project.
 
-   
+
+   ```

@@ -18,8 +18,10 @@ app.use(cookieParser());
 app.use("/auth", authRoutes);
 app.use("/blogs", blogRoutes);
 
+//MongoDb url for database
+
 mongoose
-  .connect(process.env.MONGODB_URL)
+  .connect(process.env.MONGODB_URL) 
   .then(() =>
     app.listen(3000, () =>
       console.log("Server running on http://localhost:3000")
